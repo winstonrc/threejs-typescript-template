@@ -8,7 +8,7 @@ function createCamera(): PerspectiveCamera {
     100 // far clipping plane
   );
 
-  camera.position.set(-1.5, 1.5, 6.5);
+  camera.position.set(-2, 1.5, 10);
 
   const radiansPerSecond = MathUtils.degToRad(60);
 
