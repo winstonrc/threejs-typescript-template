@@ -1,5 +1,7 @@
 import { World } from './World/World';
 
+document.querySelector('#h1')?.append('Three.js Template');
+
 async function main() {
   const container = document.querySelector(
     '#scene-container'
