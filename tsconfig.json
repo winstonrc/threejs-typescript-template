@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "public/": ["public/*"]
+    },
+    "lib": ["es2015", "dom"],
+    "target": "es6",
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "strict": true
+  }
+}
