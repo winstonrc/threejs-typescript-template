@@ -15,9 +15,9 @@ It comes with examples for everything needed to create a basic scene including:
 
 # Commands
 
-* `npm install`: installs the project
-* `npm run build`: builds the project
-* `npm start`: starts the server on http://localhost:9000 by default
+* `npm install` - installs the project
+* `npm run build` - builds the project
+* `npm start` - starts the server on http://localhost:9000 by default
 
 # Contributing
 
