@@ -2,12 +2,12 @@
 
 This template is designed for quickly creating Three.js projects written in TypeScript.
 
-It comes with examples everything needed to create a basic scene including:
-* Resizer
+It comes with examples for everything needed to create a basic scene including:
 * Renderer
+* Window resizer
 * Camera
-* OrbitControls
 * Lights
+* OrbitControls
 * Assets: (basic shapes like a cube & `.glb` models)
 * Textures
 
@@ -19,4 +19,4 @@ It comes with examples everything needed to create a basic scene including:
 
 # Contributing
 
-If you notice anything not working or that should be added, please check for preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new one if not found. Pull requests are happily accepted!
+If you notice anything not working or that you think should be added, please check the preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new one if your issues is not found. Pull requests are happily accepted!
