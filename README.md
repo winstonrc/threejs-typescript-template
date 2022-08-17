@@ -1,6 +1,6 @@
 # threejs-typescript-template
 
-![birds](https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template-gif/main/gif/birds.gif)
+<img src="[/images/output/video1.gif](https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template-gif/main/gif/birds.gif)" width="250" height="250"/>
 
 This template is designed for deploying a Three.js project written in TypeScript in less than a minute.
 
