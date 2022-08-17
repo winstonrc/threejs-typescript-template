@@ -1,6 +1,6 @@
 # threejs-typescript-template
 
-This template is designed for quickly creating Three.js projects written in TypeScript.
+This template is designed for deploying a Three.js project written in TypeScript in under one minute.
 
 It comes with examples for everything needed to create a basic scene including:
 * Renderer
