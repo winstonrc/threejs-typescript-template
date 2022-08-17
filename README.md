@@ -11,6 +11,11 @@ It comes with examples everything needed to create a basic scene including:
 * Assets: (basic shapes like a cube & `.glb` models)
 * Textures
 
+# Commands
+
+* Build: `npm run build`
+* Start: `npm start` (starts the server on http://localhost:9000 by default)
+
 # Contributing
 
 If you notice anything not working or that should be added, please check for preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new one if not found. Pull requests are happily accepted!
