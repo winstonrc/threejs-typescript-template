@@ -12,13 +12,13 @@ interface lightTypes {
 }
 
 function createLights(): lightTypes {
-  const mainLight = new DirectionalLight('white', 2);
+  const mainLight = new DirectionalLight('white', 8);
   mainLight.position.set(10, 10, 10);
 
   const ambientLight = new AmbientLight('white', 2);
 
   // uses a bright sky color and a dark ground color
-  const hemisphereLight = new HemisphereLight('white', 'darkslategray', 3);
+  const hemisphereLight = new HemisphereLight('white', 'darkslategray', 4);
 
   const radiansPerSecond = MathUtils.degToRad(90);
 
