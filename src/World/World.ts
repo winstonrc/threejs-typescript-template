@@ -18,8 +18,7 @@ import { Resizer } from './systems/Resizer';
 /**
  * If two instances of the World class are created, the second instance will
  * overwrite the module scoped variables below from the first instance.
- * Since we only plan on creating one World class at a time,
- * we will accept this limitation.
+ * Accordingly, only one World class should be used at a time.
  */
 let camera: PerspectiveCamera | OrthographicCamera;
 let scene: Scene;
