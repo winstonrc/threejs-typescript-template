@@ -1,6 +1,10 @@
 # threejs-typescript-template
 
-[Click here to view a demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
+<a href="https://winstoncooke.github.io/threejs-typescript-template/">
+    <img src="https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template/github-pages/images/birdsScreenshot.png" alt="Screenshot" width="400" height="300">
+  </a>
+
+[Click here to view a live demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
 
 This template is designed for deploying a Three.js project written in TypeScript in less than a minute.
 
