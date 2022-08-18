@@ -14,7 +14,7 @@ It comes with examples for everything needed to create a basic scene including:
 * Camera
 * Lights
 * OrbitControls
-* Assets: (basic shapes like a cube & `.glb` models)
+* Assets: basic shapes like a cube & `.glb` models
 * Textures
 
 # Commands
