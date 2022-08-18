@@ -4,7 +4,7 @@
 
 [Click here to view a live demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
 
-This template is designed for deploying a Three.js project written in TypeScript in under a minute.
+This template is designed for deploying a Three.js project written in TypeScript in under a minute. It uses Webpack to bundle the source into a running project in your browser and includes quick refreshing.
 
 It comes with examples for everything needed to create a basic scene including:
 
