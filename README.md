@@ -1,6 +1,6 @@
 # threejs-typescript-template
 
-[<img src="https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template/github-pages/images/projectScreenshot.png" alt="Screenshot" width="400" height="300">](https://winstoncooke.github.io/threejs-typescript-template/)
+[<img src="https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template/github-pages/images/projectScreenshot.png" alt="Screenshot" width="500" height="300">](https://winstoncooke.github.io/threejs-typescript-template/)
 
 [Click here to view a live demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
 
