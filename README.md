@@ -1,6 +1,6 @@
 # threejs-typescript-template
 
-<a href="https://github.com/winstoncooke/AccountingSoftware">
+<a href="https://winstoncooke.github.io/threejs-typescript-template/">
     <img src="https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template/github-pages/images/birdsScreenshot.png" alt="Screenshot" width="300" height="200">
   </a>
 
