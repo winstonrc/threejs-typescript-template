@@ -20,7 +20,7 @@ It comes with examples for everything needed to create a basic scene including:
 
 ## Installation & usage
 
-This project requires [Node.js and npm]([https://nodejs.org/en/download/](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
+This project requires [Node.js and npm](https://nodejs.org/en/download/](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Either click the `Use this template` button above or run `git clone git@github.com:winstoncooke/threejs-typescript-template.git` in your terminal
 - `npm install` - installs the project
 - `npm run build` - builds the project, which is output to `dist/bundle.js` by default
