@@ -42,7 +42,7 @@ To start the project run:
 ```
 npm start
 ```
-The server runs on `http://localhost:9000` by default
+The server runs on [`http://localhost:9000`](http://localhost:9000) by default
 
 ## Contributing
 
