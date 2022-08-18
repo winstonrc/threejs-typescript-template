@@ -8,6 +8,8 @@ interface controlsTypes {
 
 function createControls({ camera, canvas }: controlsTypes): OrbitControls {
   const controls = new OrbitControls(camera, canvas);
+  controls.minDistance = 1;
+  controls.maxDistance = 95;
   controls.enablePan = true;
   // damping & auto rotation require the controls to be updated each frame
   controls.enableDamping = true;
