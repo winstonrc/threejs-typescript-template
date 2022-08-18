@@ -6,9 +6,9 @@ import {
   WebGLRenderer,
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { loadBirds } from './components/birds/birds';
 import { createCamera } from './components/camera';
 import { createLights } from './components/lights';
+import { loadModels } from './components/models/loadModels';
 import { createScene } from './components/scene';
 import { createControls } from './systems/controls';
 import { Loop } from './systems/Loop';
@@ -36,7 +36,7 @@ class World {
      * background color in index.css to prevent flashing on load
      * (src/styles/index.css #scene-container)
      */
-    scene = createScene({ backgroundColor: 'skyblue' });
+    scene = createScene({ backgroundColor: 'transparent' });
     renderer = createRenderer();
     controls = createControls({ camera: camera, canvas: renderer.domElement });
     loop = new Loop({ camera, scene, renderer });
@@ -51,11 +51,11 @@ class World {
   }
 
   async init() {
-    const { parrot, flamingo, stork } = await loadBirds();
+    const { parrot } = await loadModels();
     controls.target.copy(parrot.position);
 
-    loop.updatables.push(parrot, flamingo, stork);
-    scene.add(parrot, flamingo, stork);
+    loop.updatables.push(parrot);
+    scene.add(parrot);
   }
 
   // for apps that update occasionally
