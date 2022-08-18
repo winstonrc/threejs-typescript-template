@@ -4,7 +4,7 @@
 
 [Click here to view a live demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
 
-This template is designed for deploying a Three.js project written in TypeScript in less than a minute.
+This template is designed for deploying a Three.js project written in TypeScript in under a minute.
 
 It comes with examples for everything needed to create a basic scene including:
 
@@ -13,7 +13,7 @@ It comes with examples for everything needed to create a basic scene including:
 - Camera
 - Lights
 - OrbitControls
-- Assets: basic shapes like a cube & `.glb` models
+- Assets: a basic cube mesh & a `.glb` model
 - Model loader
 - Textures
 - Animation support (delta synced with the clock for consistent framerates)
@@ -26,4 +26,4 @@ It comes with examples for everything needed to create a basic scene including:
 
 ## Contributing
 
-If you notice anything not working or that you think should be added, please check the preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new one if your issues is not found. Pull requests are happily accepted!
+If you notice anything not working or that you think should be added, please check the preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new issue if yours does not exist. Pull requests are happily accepted!
