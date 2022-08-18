@@ -4,7 +4,7 @@
 
 [Click here to view a live demo of the deployed template](https://winstoncooke.github.io/threejs-typescript-template/)
 
-This template is designed for deploying a Three.js project written in TypeScript in less than a minute.
+This template is designed for deploying a Three.js project written in TypeScript in under a minute. It uses Webpack to bundle the source into a running project in your browser and includes quick refreshing.
 
 It comes with examples for everything needed to create a basic scene including:
 
@@ -13,17 +13,37 @@ It comes with examples for everything needed to create a basic scene including:
 - Camera
 - Lights
 - OrbitControls
-- Assets: basic shapes like a cube & `.glb` models
+- Assets: a basic cube mesh & a `.glb` model
 - Model loader
 - Textures
 - Animation support (delta synced with the clock for consistent framerates)
 
-## Commands
+## Installation & Usage
 
-- `npm install` - installs the project
-- `npm run build` - builds the project, which is output to `dist/bundle.js` by default
-- `npm start` - starts the server on `http://localhost:9000` by default
+This project requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+The template can be used by clicking the [`Use this template`](https://github.com/winstoncooke/threejs-typescript-template/generate) button or running the following command:
+```
+git clone git@github.com:winstoncooke/threejs-typescript-template.git
+```
+
+To install the project run:
+```
+npm install
+```
+
+To build the project run:
+```
+npm run build
+```
+The default output after building is `dist/bundle.js`
+
+To start the project run:
+```
+npm start
+```
+The server runs on [`http://localhost:9000`](http://localhost:9000) by default
 
 ## Contributing
 
-If you notice anything not working or that you think should be added, please check the preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new one if your issues is not found. Pull requests are happily accepted!
+If you notice anything not working or that you think should be added, please check the preexisting [issues](https://github.com/winstoncooke/threejs-typescript-template/issues) and create a new issue if yours does not exist. Pull requests are happily accepted!
