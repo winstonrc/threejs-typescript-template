@@ -17,6 +17,8 @@ It comes with examples for everything needed to create a basic scene including:
 - Model loader
 - Textures
 - Animation support (delta synced with the clock for consistent framerates)
+- Grid and Axes helpers to visualize the canvas
+- Stats module for monitoring FPS
 
 ## Installation & Usage
 
