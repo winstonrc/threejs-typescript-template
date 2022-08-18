@@ -27,9 +27,22 @@ The template can be used by clicking `Use this template` button above or runing 
 git clone git@github.com:winstoncooke/threejs-typescript-template.git
 ```
 
-- `npm install` - installs the project
-- `npm run build` - builds the project, which is output to `dist/bundle.js` by default
-- `npm start` - starts the server on `http://localhost:9000` by default
+To install the project run:
+```
+npm install
+```
+
+To build the project run:
+```
+npm run build
+```
+The default output after building is `dist/bundle.js`
+
+To start the project run:
+```
+npm start
+```
+The server runs on `http://localhost:9000` by default
 
 ## Contributing
 
