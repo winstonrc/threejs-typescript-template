@@ -32,5 +32,5 @@ h1 {
     background to prevent flashing on load
     (src/World/components/scene.ts)
   */
-  background-color: skyblue;
+  background-color: transparent;
 }

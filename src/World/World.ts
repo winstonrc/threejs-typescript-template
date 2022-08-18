@@ -36,7 +36,7 @@ class World {
      * background color in index.css to prevent flashing on load
      * (src/styles/index.css #scene-container)
      */
-    scene = createScene({ backgroundColor: 'skyblue' });
+    scene = createScene({ backgroundColor: 'transparent' });
     renderer = createRenderer();
     controls = createControls({ camera: camera, canvas: renderer.domElement });
     loop = new Loop({ camera, scene, renderer });
