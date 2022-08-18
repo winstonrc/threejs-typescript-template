@@ -22,7 +22,7 @@ It comes with examples for everything needed to create a basic scene including:
 
 This project requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-The template can be used by clicking [`Use this template`](https://github.com/winstoncooke/threejs-typescript-template/generate) button above or running the following command:
+The template can be used by clicking the [`Use this template`](https://github.com/winstoncooke/threejs-typescript-template/generate) button or running the following command:
 ```
 git clone git@github.com:winstoncooke/threejs-typescript-template.git
 ```
