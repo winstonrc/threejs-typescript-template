@@ -18,7 +18,7 @@ It comes with examples for everything needed to create a basic scene including:
 - Textures
 - Animation support (delta synced with the clock for consistent framerates)
 
-## Installation & usage
+## Installation & Usage
 
 This project requires [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Either click the `Use this template` button above or run `git clone git@github.com:winstoncooke/threejs-typescript-template.git` in your terminal
