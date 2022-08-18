@@ -18,8 +18,10 @@ It comes with examples for everything needed to create a basic scene including:
 - Textures
 - Animation support (delta synced with the clock for consistent framerates)
 
-## Commands
+## Installation & usage
 
+This project requires [Node.js](https://nodejs.org/en/download/)
+- Either click the `Use this template` button above or run `git clone git@github.com:winstoncooke/threejs-typescript-template.git` in your terminal
 - `npm install` - installs the project
 - `npm run build` - builds the project, which is output to `dist/bundle.js` by default
 - `npm start` - starts the server on `http://localhost:9000` by default
