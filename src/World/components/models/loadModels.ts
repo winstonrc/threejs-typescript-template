@@ -9,7 +9,7 @@ async function loadModels() {
   ]);
 
   const parrot = setupModel(parrotData);
-  parrot.position.set(0, 0, 0);
+  parrot.position.set(0, 1, 0);
 
   return {
     parrot,

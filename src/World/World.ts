@@ -7,6 +7,7 @@ import {
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createCamera } from './components/camera';
+import { createAxesHelper, createGridHelper } from './components/helpers';
 import { createLights } from './components/lights';
 import { loadModels } from './components/models/loadModels';
 import { createScene } from './components/scene';
@@ -47,6 +48,11 @@ class World {
     scene.add(mainLight, hemisphereLight);
 
     new Resizer({ container, camera, renderer });
+
+    const grid = createGridHelper();
+    const axes = createAxesHelper();
+
+    scene.add(grid, axes);
   }
 
   async init() {
