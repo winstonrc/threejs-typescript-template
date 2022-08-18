@@ -6,9 +6,10 @@ import {
   WebGLRenderer,
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { loadBirds } from './components/birds/birds';
 import { createCamera } from './components/camera';
+import { createAxesHelper, createGridHelper } from './components/helpers';
 import { createLights } from './components/lights';
+import { loadModels } from './components/models/loadModels';
 import { createScene } from './components/scene';
 import { createControls } from './systems/controls';
 import { Loop } from './systems/Loop';
@@ -18,8 +19,7 @@ import { Resizer } from './systems/Resizer';
 /**
  * If two instances of the World class are created, the second instance will
  * overwrite the module scoped variables below from the first instance.
- * Since we only plan on creating one World class at a time,
- * we will accept this limitation.
+ * Accordingly, only one World class should be used at a time.
  */
 let camera: PerspectiveCamera | OrthographicCamera;
 let scene: Scene;
@@ -36,7 +36,7 @@ class World {
      * background color in index.css to prevent flashing on load
      * (src/styles/index.css #scene-container)
      */
-    scene = createScene({ backgroundColor: 'skyblue' });
+    scene = createScene({ backgroundColor: 'transparent' });
     renderer = createRenderer();
     controls = createControls({ camera: camera, canvas: renderer.domElement });
     loop = new Loop({ camera, scene, renderer });
@@ -48,14 +48,19 @@ class World {
     scene.add(mainLight, hemisphereLight);
 
     new Resizer({ container, camera, renderer });
+
+    const grid = createGridHelper();
+    const axes = createAxesHelper();
+
+    scene.add(grid, axes);
   }
 
   async init() {
-    const { parrot, flamingo, stork } = await loadBirds();
+    const { parrot } = await loadModels();
     controls.target.copy(parrot.position);
 
-    loop.updatables.push(parrot, flamingo, stork);
-    scene.add(parrot, flamingo, stork);
+    loop.updatables.push(parrot);
+    scene.add(parrot);
   }
 
   // for apps that update occasionally

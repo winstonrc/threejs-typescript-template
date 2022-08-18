@@ -6,6 +6,7 @@ import {
   WebGL1Renderer,
   WebGLRenderer,
 } from 'three';
+import Stats from 'three/examples/jsm/libs/stats.module';
 
 interface LoopTypes {
   camera: PerspectiveCamera | OrthographicCamera;
@@ -19,18 +20,23 @@ class Loop {
   scene: LoopTypes['scene'];
   renderer: LoopTypes['renderer'];
   updatables: any[];
+  stats: Stats;
 
   constructor({ camera, scene, renderer }: LoopTypes) {
     this.camera = camera;
     this.scene = scene;
     this.renderer = renderer;
     this.updatables = [];
+    this.stats = Stats();
+
+    document.body.appendChild(this.stats.dom);
   }
 
   start() {
     this.renderer.setAnimationLoop(() => {
       this.tick();
       this.renderer.render(this.scene, this.camera);
+      this.stats.update();
     });
   }
 
