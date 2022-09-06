@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/three": "^0.143.1",
     "@typescript-eslint/eslint-plugin": "^5.35.1",
-    "@typescript-eslint/parser": "^5.35.1",
+    "@typescript-eslint/parser": "^5.36.1",
     "eslint": "^8.23.0",
     "prettier-plugin-organize-imports": "^3.1.1",
     "ts-loader": "^9.3.1",
