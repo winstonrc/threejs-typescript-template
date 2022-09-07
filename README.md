@@ -1,4 +1,4 @@
-# threejs-typescript-template
+# Threejs Typescript Template
 
 [<img src="https://raw.githubusercontent.com/winstoncooke/threejs-typescript-template/github-pages/images/projectScreenshot.png" alt="Screenshot" width="533" height="300">](https://winstoncooke.github.io/threejs-typescript-template/)
 
