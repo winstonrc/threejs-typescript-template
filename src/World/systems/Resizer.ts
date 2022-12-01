@@ -1,13 +1,13 @@
-import { PerspectiveCamera, WebGL1Renderer, WebGLRenderer } from 'three';
+import { OrthographicCamera, WebGL1Renderer, WebGLRenderer } from 'three';
 
 interface ResizerTypes {
   container: HTMLCanvasElement;
-  camera: PerspectiveCamera;
+  camera: OrthographicCamera;
   renderer: WebGLRenderer | WebGL1Renderer;
 }
 
 const setSize = ({ container, camera, renderer }: ResizerTypes) => {
-  camera.aspect = container.clientWidth / container.clientHeight;
+  //camera.aspect = container.clientWidth / container.clientHeight;
   camera.updateProjectionMatrix(); // automatically recalculate the frustrum
   renderer.setSize(container.clientWidth, container.clientHeight);
   renderer.setPixelRatio(window.devicePixelRatio);
@@ -22,7 +22,7 @@ class Resizer {
     });
   }
 
-  onResize() {}
+  onResize() { }
 }
 
 export { Resizer };

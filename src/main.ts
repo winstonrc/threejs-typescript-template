@@ -1,6 +1,6 @@
 import { World } from './World/World';
 
-document.querySelector('#h1')?.append('Three.js Template');
+document.querySelector('#h1')?.append('Exame CMC-30');
 
 async function main() {
   const container = document.querySelector(

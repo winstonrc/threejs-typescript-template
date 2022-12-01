@@ -4,24 +4,27 @@ import {
   Scene,
   WebGL1Renderer,
   WebGLRenderer,
+  AmbientLight,
+  DirectionalLight
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { createCamera } from './components/camera';
 import { createAxesHelper, createGridHelper } from './components/helpers';
 import { createLights } from './components/lights';
-import { loadModels } from './components/models/loadModels';
+import { createCar } from './components/objects/car';
 import { createScene } from './components/scene';
 import { createControls } from './systems/controls';
 import { Loop } from './systems/Loop';
 import { createRenderer } from './systems/renderer';
 import { Resizer } from './systems/Resizer';
+import { createMap } from './components/objects/map'
 
 /**
  * If two instances of the World class are created, the second instance will
  * overwrite the module scoped variables below from the first instance.
  * Accordingly, only one World class should be used at a time.
  */
-let camera: PerspectiveCamera | OrthographicCamera;
+let camera: OrthographicCamera;
 let scene: Scene;
 let renderer: WebGLRenderer | WebGL1Renderer;
 let controls: OrbitControls;
@@ -31,23 +34,15 @@ class World {
   constructor(container: HTMLCanvasElement) {
     camera = createCamera();
 
-    /**
-     * Set the scene's background color to the same as the container's
-     * background color in index.css to prevent flashing on load
-     * (src/styles/index.css #scene-container)
-     */
-    scene = createScene({ backgroundColor: 'transparent' });
+    scene = createScene();
     renderer = createRenderer();
-    controls = createControls({ camera: camera, canvas: renderer.domElement });
     loop = new Loop({ camera, scene, renderer });
     container.append(renderer.domElement);
 
-    const { mainLight, hemisphereLight } = createLights();
+    const { directionalLight, ambientLight } = createLights();
 
-    loop.updatables.push(controls);
-    scene.add(mainLight, hemisphereLight);
+    scene.add(directionalLight, ambientLight);
 
-    new Resizer({ container, camera, renderer });
 
     const grid = createGridHelper();
     const axes = createAxesHelper();
@@ -56,11 +51,10 @@ class World {
   }
 
   async init() {
-    const { parrot } = await loadModels();
-    controls.target.copy(parrot.position);
-
-    loop.updatables.push(parrot);
-    scene.add(parrot);
+    const car = createCar();
+    const map = createMap();
+    scene.add(car);
+    scene.add(map);
   }
 
   // for apps that update occasionally

@@ -1,24 +1,20 @@
-import { MathUtils, PerspectiveCamera } from 'three';
+import { OrthographicCamera } from 'three';
 
-function createCamera(): PerspectiveCamera {
-  const camera = new PerspectiveCamera(
-    35, // fov = Field Of View
-    1, // aspect ratio (dummy value)
-    0.1, // near clipping plane
-    100 // far clipping plane
+function createCamera(): OrthographicCamera {
+  const aspectRatio = window.innerWidth / window.innerHeight;
+  const cameraWidth = 960;
+  const cameraHeight = cameraWidth / aspectRatio;
+
+  const camera = new OrthographicCamera(
+    cameraWidth / -2,
+    cameraWidth / 2,
+    cameraHeight / 2,
+    cameraHeight / -2,
+    0,
+    1000
   );
-
-  camera.position.set(0, 4, 10);
-
-  const radiansPerSecond = MathUtils.degToRad(60);
-
-  // @ts-ignore
-  camera.tick = (delta: number) => {
-    camera.position.z += radiansPerSecond * delta;
-    // camera.position.x += radiansPerSecond * delta;
-    // camera.position.y += radiansPerSecond * delta;
-  };
-
+  camera.position.set(0, 0, 300);
+  camera.lookAt(0, 0, 0);
   return camera;
 }
 

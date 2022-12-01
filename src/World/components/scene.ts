@@ -1,6 +1,6 @@
-import { Color, Scene } from 'three';
+import { Scene, Object3D } from 'three';
 
-function createScene({ backgroundColor }: { backgroundColor: string }): Scene {
+function createScene(): Scene {
   const scene = new Scene();
 
   /**
@@ -8,7 +8,6 @@ function createScene({ backgroundColor }: { backgroundColor: string }): Scene {
    * background in index.css to prevent flashing on load
    * (src/styles/index.css #scene-container)
    */
-  scene.background = new Color(backgroundColor);
   return scene;
 }
 
