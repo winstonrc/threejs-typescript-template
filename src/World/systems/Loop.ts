@@ -6,7 +6,7 @@ import {
   WebGL1Renderer,
   WebGLRenderer,
 } from 'three';
-import Stats from 'three/examples/jsm/libs/stats.module';
+import * as Stats from 'stats.js';
 
 interface LoopTypes {
   camera: PerspectiveCamera | OrthographicCamera;
@@ -27,7 +27,7 @@ class Loop {
     this.scene = scene;
     this.renderer = renderer;
     this.updatables = [];
-    this.stats = Stats();
+    this.stats = new Stats();
 
     document.body.appendChild(this.stats.dom);
   }
