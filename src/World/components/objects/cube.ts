@@ -1,5 +1,5 @@
 import {
-  BoxBufferGeometry,
+  BoxGeometry,
   MathUtils,
   Mesh,
   MeshBasicMaterial,
@@ -44,7 +44,7 @@ function createMaterial({ cubeType, texture, color }: Cube) {
 }
 
 function createCube({ cubeType, texture, color }: Cube): Mesh {
-  const geometry = new BoxBufferGeometry(2, 2, 2);
+  const geometry = new BoxGeometry(2, 2, 2);
   const material = createMaterial({ cubeType, texture, color });
   const cube = new Mesh(geometry, material);
 
